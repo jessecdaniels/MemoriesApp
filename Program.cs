@@ -3,10 +3,16 @@
 namespace MemoriesApp
 {
     class Program
-    {
-        static void Main(string[] args)
+    {  
+        //ask childs name 
+        //ask if recording memory or quote
+        //ask for date
+        //prompt to record memory or quote
+                static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            
+
         }
     }
 }
