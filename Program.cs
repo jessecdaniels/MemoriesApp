@@ -1,13 +1,93 @@
 ﻿using System;
-
+ 
 namespace MemoriesApp
 {
     class Program
     {
         static void Main(string[] args)
+        //use while loop to invoke menu, will iterate as long as that bool value is true
         {
-            var MemoriesLog = new MemoriesLogMenu();
-            MemoriesLog.StartMemoriesLogMenu();
+            bool showMenu = true;
+            while (showMenu)
+            {
+                showMenu = MainMenu();
+            }
         }
+        //MainMenu method prints the menu options to the console and waits for users input
+            private static bool MainMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("Choose an option:");
+            Console.WriteLine("1) Record a Memory");
+            Console.WriteLine("2) Record a Quote");
+            Console.WriteLine("3) Record a Height");
+            Console.WriteLine("4) Make Gibberish"); //something silly as requested by my 4 year old daughter
+            Console.WriteLine("5) Exit");
+            Console.Write("\r\nSelect an option: ");
+
+            // replaced previous if else with switch statement
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    RecordMemory();
+                    return true;
+                case "2":
+                    RecordQuote();
+                    return true;
+                case "3":
+                    RecordHeight();
+                    return true;
+                case "4":
+                    ReverseSentence();
+                    return true;
+                case "5":
+                    return false; // exits the program
+                default:
+                    return true;
+            }
+        }
+        private static string CaptureInput
+        {
+            get
+            {
+                Console.Write("Enter the sentence you want to reverse: ");
+                return Console.ReadLine();
+            }
+        }
+
+        private static void ReverseSentence()
+        {
+            Console.Clear();
+            Console.WriteLine("Reverse Sentence");
+ 
+            char[] charArray = CaptureInput.ToCharArray();
+            Array.Reverse(charArray);
+            DisplayResult(String.Concat(charArray));
+        }
+
+         private static void DisplayResult(string message)
+        {
+            Console.WriteLine($"\r\nYour modified string is: {message}");
+            Console.Write("\r\nPress Enter to return to Main Menu");
+            Console.ReadLine();
+        }
+        private static string RecordMemory()
+        {
+            Console.Write("Enter a new memory of your kiddo: ");
+            return Console.ReadLine();
+        }
+        private static string RecordQuote()
+        {
+            Console.Write("Enter a new quote for your kiddo: ");
+            return Console.ReadLine();
+        }
+        
+         private static string RecordHeight()
+        {
+            Console.Write("Enter an updated height of your kiddo: ");
+            return Console.ReadLine();
+        }
+
+        }
+        
     }
-}
