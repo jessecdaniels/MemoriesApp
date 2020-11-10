@@ -2,9 +2,9 @@
 
 MemoriesApp is a console application and my final project for Code Louisville's C# course.
 
-One reoccurring piece of advice parents gave my wife and I when we were expecting our first child was to write down memories of their early years. We often heard, "Blink and you will miss it!” I realized that our happhazard way of writing notepad notes was getting a little hard to keep track of.
+One reoccurring piece of advice parents gave my wife and I when we were expecting our first child was to write down memories of their early years. We often heard, "Blink and you will miss it!” I realized that our haphazard way of writing sticky notes and sticking them in our drawer was getting a little hard to keep track of.
 
-With that in mind I wanted to create the MemoriesApp as a simple journal tool to record memories, quotes, and the growth of my two kids. My almost 5 year old was not impressed and wanted it to do something silly, hence the “Gibberish” function.  
+With that in mind I wanted to create the MemoriesApp as a simple journal tool to record memories, quotes, and the growth of my two kids. My almost 5 year old was not completely impressed and wanted it to do something "silly", hence the “Gibberish” function.  
 
 ### Requirements & Features
 
@@ -25,4 +25,4 @@ With that in mind I wanted to create the MemoriesApp as a simple journal tool to
 ## Acknowledgments
 
 All the Code Louisville Staff and Mentors
-My 4 year old daughter for pushing me farther
+My 4 year old daughter for pushing me to be silly
