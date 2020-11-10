@@ -17,7 +17,26 @@ namespace MemoriesApp
             private static bool MainMenu()
         {
             Console.Clear();
-            Console.WriteLine("Choose an option:");
+            string titleArt = @"
+
+ .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. .----------------. 
+| .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. | .--------------. |
+| | ____    ____ | | |  _________   | | | ____    ____ | | |     ____     | | |  _______     | | |     _____    | | |  _________   | | |    _______   | |
+| ||_   \  /   _|| | | |_   ___  |  | | ||_   \  /   _|| | |   .'    `.   | | | |_   __ \    | | |    |_   _|   | | | |_   ___  |  | | |   /  ___  |  | |
+| |  |   \/   |  | | |   | |_  \_|  | | |  |   \/   |  | | |  /  .--.  \  | | |   | |__) |   | | |      | |     | | |   | |_  \_|  | | |  |  (__ \_|  | |
+| |  | |\  /| |  | | |   |  _|  _   | | |  | |\  /| |  | | |  | |    | |  | | |   |  __ /    | | |      | |     | | |   |  _|  _   | | |   '.___`-.   | |
+| | _| |_\/_| |_ | | |  _| |___/ |  | | | _| |_\/_| |_ | | |  \  `--'  /  | | |  _| |  \ \_  | | |     _| |_    | | |  _| |___/ |  | | |  |`\____) |  | |
+| ||_____||_____|| | | |_________|  | | ||_____||_____|| | |   `.____.'   | | | |____| |___| | | |    |_____|   | | | |_________|  | | |  |_______.'  | |
+| |              | | |              | | |              | | |              | | |              | | |              | | |              | | |              | |
+| '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' | '--------------' |
+ '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' 
+
+ ";
+
+            Console.WriteLine(titleArt);
+            Console.WriteLine("***********************");
+            Console.WriteLine("*  Choose an option:  *");
+            Console.WriteLine("***********************");
             Console.WriteLine("1) Record a Memory");
             Console.WriteLine("2) Record a Quote");
             Console.WriteLine("3) Record a Height");
@@ -46,7 +65,23 @@ namespace MemoriesApp
                     return true;
             }
         }
-        private static string CaptureInput
+        private static string RecordMemory()
+        {
+            Console.Write("Enter a new memory of your kiddo: ");
+            return Console.ReadLine();
+        }
+        private static string RecordQuote()
+        {
+            Console.Write("Enter a new quote for your kiddo: ");
+            return Console.ReadLine();
+        }
+        
+         private static string RecordHeight()
+        {
+            Console.Write("Enter an updated height of your kiddo: ");
+            return Console.ReadLine();
+        }
+          private static string CaptureInput
         {
             get
             {
@@ -70,22 +105,6 @@ namespace MemoriesApp
             Console.WriteLine($"\r\nYour modified string is: {message}");
             Console.Write("\r\nPress Enter to return to Main Menu");
             Console.ReadLine();
-        }
-        private static string RecordMemory()
-        {
-            Console.Write("Enter a new memory of your kiddo: ");
-            return Console.ReadLine();
-        }
-        private static string RecordQuote()
-        {
-            Console.Write("Enter a new quote for your kiddo: ");
-            return Console.ReadLine();
-        }
-        
-         private static string RecordHeight()
-        {
-            Console.Write("Enter an updated height of your kiddo: ");
-            return Console.ReadLine();
         }
 
         }
