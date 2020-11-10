@@ -34,14 +34,16 @@ namespace MemoriesApp
  ";
 
             Console.WriteLine(titleArt);
-            Console.WriteLine("***********************");
-            Console.WriteLine("*  Choose an option:  *");
-            Console.WriteLine("***********************");
+            Console.WriteLine("*************************************");
+            Console.WriteLine("*  What would you like to do today: *");
+            Console.WriteLine("*************************************");
+            Console.WriteLine("");
             Console.WriteLine("1) Record a Memory");
             Console.WriteLine("2) Record a Quote");
             Console.WriteLine("3) Record a Height");
             Console.WriteLine("4) Make Gibberish"); //something silly as requested by my 4 year old daughter
-            Console.WriteLine("5) Exit");
+            Console.WriteLine("5) Calculate Age");
+            Console.WriteLine("6) Exit");
             Console.Write("\r\nSelect an option: ");
 
             // replaced previous if else with switch statement
@@ -59,7 +61,10 @@ namespace MemoriesApp
                 case "4":
                     ReverseSentence();
                     return true;
-                case "5":
+                // case "5":
+                    // CalculateAge();
+                    // return true;  
+                case "6":
                     return false; // exits the program
                 default:
                     return true;
@@ -89,12 +94,10 @@ namespace MemoriesApp
                 return Console.ReadLine();
             }
         }
-
         private static void ReverseSentence()
         {
             Console.Clear();
             Console.WriteLine("Reverse Sentence");
- 
             char[] charArray = CaptureInput.ToCharArray();
             Array.Reverse(charArray);
             DisplayResult(String.Concat(charArray));
@@ -103,10 +106,9 @@ namespace MemoriesApp
          private static void DisplayResult(string message)
         {
             Console.WriteLine($"\r\nYour modified string is: {message}");
-            Console.Write("\r\nPress Enter to return to Main Menu");
+            Console.Write("\r\nPress Enter to return to MemoriesApp Main Menu");
             Console.ReadLine();
         }
-
-        }
-        
     }
+}
+        
