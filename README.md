@@ -25,4 +25,5 @@ With that in mind I wanted to create the MemoriesApp as a simple journal tool to
 ## Acknowledgments
 
 All the Code Louisville Staff and Mentors
+
 My 4 year old daughter for pushing me to be silly
