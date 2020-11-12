@@ -1,9 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace MemoriesApp
-{
+{ 
     // Represents journal layer for communication with user
         class Journal
     {
@@ -11,8 +13,7 @@ namespace MemoriesApp
         private Database database;
 
         // Initializes instance
-     
-        public Journal()
+             public Journal()
         {
             database = new Database();
         }
@@ -23,13 +24,11 @@ namespace MemoriesApp
             Console.WriteLine("Enter date and time as e.g. [01/01/2020 11:00]:");
             DateTime dateTime;
             while (!DateTime.TryParse(Console.ReadLine(), out dateTime))
-                Console.WriteLine("Error. Please try again: ");
+                Console.WriteLine("Error. Please enter just the date and/or time: ");
             return dateTime;
         }
 
         // Prints all memories occurring on given day
-       
-        /// <param name="day">Day</param>
         public void PrintMemories(DateTime day)
         {
             List<Memory> memories = database.FindMemories(day, false);
@@ -42,7 +41,7 @@ namespace MemoriesApp
         public void AddMemory()
         {
             DateTime dateTime = ReadDateTime();
-            Console.WriteLine("Enter the memory text:");
+            Console.WriteLine("Enter your memory:");
             string text = Console.ReadLine();
             database.AddMemory(dateTime, text);
         }
@@ -118,18 +117,19 @@ namespace MemoriesApp
  ";
 
             Console.WriteLine(titleArt);
-            Console.WriteLine("Welcome to the Memories App");
+            Console.WriteLine("** WELCOME TO THE MEMORIES APP **");
             Console.WriteLine();
-            Console.WriteLine("Today is: {0}", DateTime.Now);
+            Console.WriteLine("Current Date & Time: {0}", DateTime.Now);
             Console.WriteLine();
             // prints the homescreen
-            Console.WriteLine("Today:\n------");
+            Console.WriteLine();
+            Console.WriteLine("Today's Memories:\n----------------");
             PrintMemories(DateTime.Today);
-            //Console.WriteLine();
-            //Console.WriteLine("Tomorrow:\n---------");
-            //PrintMemories(DateTime.Now.AddDays(1));
-            //Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("ONE YEAR AGO:\n------------");
+            PrintMemories(DateTime.Now.AddYears(-1));
+            Console.WriteLine();
         }
-
     }
 }
+
