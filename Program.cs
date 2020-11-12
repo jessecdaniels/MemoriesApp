@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MemoriesApp
 {
@@ -51,7 +48,7 @@ namespace MemoriesApp
                         Console.WriteLine("That is not a menu option. Press any key to choose another action.");
                         break;
                 }
-                Console.ReadKey();
+                // Console.ReadKey();
             }
         }
     }
