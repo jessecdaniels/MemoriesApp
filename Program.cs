@@ -34,6 +34,7 @@ namespace MemoriesApp
                         break;
                     case '2':
                         journal.SearchMemories();
+                        Console.ReadKey();
                         break;
                     case '3':
                         journal.DeleteMemories();
@@ -47,6 +48,7 @@ namespace MemoriesApp
                     default:
                         Console.WriteLine("That is not a menu option. Press any key to choose another action.");
                         break;
+                       
                 }
                 // Console.ReadKey();
             }
