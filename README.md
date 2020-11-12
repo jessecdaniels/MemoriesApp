@@ -14,7 +14,9 @@ With that in mind I wanted to create the MemoriesApp as a simple journal tool to
  - [x] Create and call 3 functions: RecordMemory(), RecordQuote(), ReverseSentence()
  - [x] 3+ items from Feature List
     - [x] Master loop
-    - [x] Switch case
+    - [x] Create an additional class which inherits one or more properties from its parent
+    - [x] Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
+    - [x] Switch statement
     - [x] Analyze text and display information about it (Gibberish menu item take user input and reverses or mirrors the sentence)
 
 
