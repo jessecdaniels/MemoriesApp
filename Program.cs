@@ -50,7 +50,6 @@ namespace MemoriesApp
                         break;
                        
                 }
-                // Console.ReadKey();
             }
         }
     }
