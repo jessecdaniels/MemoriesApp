@@ -91,6 +91,8 @@ namespace MemoriesApp
          public static void DisplayResult(string message)
         {
             Console.WriteLine($"\r\nYour modified string is: {message}");
+            string str = message;
+            Console.WriteLine("1) The length of '{0}' is {1}", str, str.Length);
             Console.Write("\r\nPress Enter to return to MemoriesApp Main Menu");
             Console.ReadLine();
         }
@@ -123,10 +125,10 @@ namespace MemoriesApp
             Console.WriteLine();
             // prints the homescreen
             Console.WriteLine();
-            Console.WriteLine("Today's Memories:\n----------------");
+            Console.WriteLine("Today's Memories:\n-----------------");
             PrintMemories(DateTime.Today);
             Console.WriteLine();
-            Console.WriteLine("ONE YEAR AGO:\n------------");
+            Console.WriteLine("ONE YEAR AGO:\n-------------");
             PrintMemories(DateTime.Now.AddYears(-1));
             Console.WriteLine();
         }
