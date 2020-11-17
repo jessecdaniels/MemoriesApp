@@ -17,7 +17,7 @@ namespace MemoriesApp
             memories = new List<Memory>();
         }
 
-        // Adds new memory
+        // Adds a new memory
         public void AddMemory(DateTime occurs, string text)
         {
             memories.Add(new Memory(occurs, text));
@@ -36,7 +36,7 @@ namespace MemoriesApp
             return found;
         }
 
-        // Removes memories occurring on specified date and time
+        // Removes memories occurring on specified date
         public void DeleteMemories(DateTime date)
         {
             List<Memory> found = FindMemories(date, true);
