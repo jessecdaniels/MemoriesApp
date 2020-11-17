@@ -22,11 +22,11 @@ namespace MemoriesApp
                 Console.WriteLine("1) - Add a memory");
                 Console.WriteLine("2) - Search for memories");
                 Console.WriteLine("3) - Delete memories");
-                Console.WriteLine("4) - Make some gibberish"); //something silly as requested by my 4 year old daughter
+                Console.WriteLine("4) - Make some gibberish"); //something silly as requested by my 4 year old daughter, also counts number of characters in string and returns that information
                 Console.WriteLine("5) - End");
                 choice = Console.ReadKey().KeyChar;
                 Console.WriteLine();
-                // reaction to the choice
+                // reaction to the users choice
                 switch (choice)
                 {
                     case '1':
@@ -43,12 +43,11 @@ namespace MemoriesApp
                         journal.ReverseSentence();
                         break;
                     case '5':
-                        Console.WriteLine("Press any key to quit the program...");
+                        Console.WriteLine("Press any key to quit the Memories App...");
                         break;
                     default:
-                        Console.WriteLine("That is not a menu option. Press any key to choose another action.");
-                        break;
-                       
+                        Console.WriteLine("That is not a menu option. Please press any key to choose another action.");
+                        break;  
                 }
             }
         }
