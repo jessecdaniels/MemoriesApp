@@ -2,7 +2,7 @@
 
 MemoriesApp is a console application and my final project for Code Louisville's 2020 C# course.
 
-# Why make the MemoriesApp
+## Why make the MemoriesApp
 
 One reoccurring piece of advice parents gave my wife and I when we were expecting our first child was to write down memories of their early years. We often heard, "Blink and you will miss it!” I realized that our haphazard way of writing sticky notes and throwing them in the drawer was getting a little hard to keep track of.
 
