@@ -12,28 +12,24 @@ With that in mind I wanted to create the MemoriesApp as a simple journal tool to
 
 Once you run the Memories App, you will be greeted by the title, current date & time, Today's Memories, ONE YEAR AGO, and the main menu options 1-5.
 
-"Today's Memories" prints all memories entered for the current date to the console while "ONE YEAR AGO" prints all memories entered from exactly one year prior. 
+    "Today's Memories" prints all memories entered for the current date to the console while "ONE YEAR AGO" prints all memories entered from exactly one year prior. 
 
 To use the Memories App simply enter a menu option 1, 2, 3, 4 or 5.
 
- [1] Add a memory
+    1) Add a memory
+        This option will prompt you for the date and time (with the time always being optional) of the memory you want to record. Then you will be prompted to enter the memory.
+    
+    2) Search for memories
+        This option will prompt you the for date and time that you would like to search memories for.
  
- This option will prompt you for the date and time (with the time always being optional) of the memory you want to record. Then you will be prompted to enter the memory.
- 
- [2] Search for memories
- 
- This option will prompt you the for date and time that you would like to search memories for.
- 
- [3] Delete memories
- 
- This option with prompt you for the date and time of the memory you would like to delete.
-
- [4] Make some gibberish
- 
- This option prompts you to enter a sentence you want to reverse, once entered the modified sentence is returned as well as the number of characters in the string and returns that information
- 
- [5] End 
- Prompts user to press any key to quit the Memories App...
+    3) Delete memories
+        This option with prompt you for the date and time of the memory you would like to delete.
+    
+    4) Make some gibberish
+        This option prompts you to enter a sentence you want to reverse, once entered the modified sentence is returned as well as the number of characters in the string and returns that information
+    
+    5) End 
+        Prompts user to press any key to quit the Memories App...
 
 ### Requirements & Features
 
