@@ -26,7 +26,7 @@ To use the Memories App simply enter a menu option 1, 2, 3, 4 or 5.
         This option with prompt you for the date and time of the memory you would like to delete.
     
     4) Make some gibberish
-        This option prompts you to enter a sentence you want to reverse, once entered the modified sentence is returned as well as the number of characters in the string and returns that information
+        This option prompts you to enter a sentence you want to reverse, once entered the modified sentence as well as the total number of characters in the sentence is returned
     
     5) End 
         Prompts user to press any key to quit the Memories App...
