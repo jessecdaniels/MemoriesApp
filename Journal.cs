@@ -65,7 +65,7 @@ namespace MemoriesApp
                 Console.WriteLine("No memories were found for this date.");
         }
 
-        // Lets user delete memories on day he enters
+        // Lets user delete memories on day they enter
         public void DeleteMemories()
         {
             Console.WriteLine("Entries with exact date and time will be deleted");
