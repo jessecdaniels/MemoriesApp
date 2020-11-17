@@ -41,9 +41,8 @@ To use the Memories App simply enter a menu option 1, 2, 3, 4 or 5.
     - [x] Master loop
     - [x] Create an additional class which inherits one or more properties from its parent
     - [x] Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
-    - [x] Switch statement
     - [x] Analyze text and display information about it (Gibberish function takes user input and reverses the sentence then calculates the number of characters in the string and returns that info)
-    - [x] Bonus features: ASCII art, console foreground color change, ToString
+    - [x] Bonus features: Switch statement, ASCII art, console foreground color change, ToString
 
 
 ## Author
