@@ -21,7 +21,7 @@ namespace MemoriesApp
         // Asks user to enter date and time and returns this value. Keep asking user until you get valid entry.
         private DateTime ReadDateTime()
         {
-            Console.WriteLine("Enter date and time as e.g. [01/01/2020 11:00]:");
+            Console.WriteLine("Enter date and time of memory as e.g. [01/01/2020 11:00 am or pm], the time is optional:");
             DateTime dateTime;
             while (!DateTime.TryParse(Console.ReadLine(), out dateTime))
                 Console.WriteLine("Error. Please enter just the date and/or time: ");
@@ -61,12 +61,11 @@ namespace MemoriesApp
                     Console.WriteLine(memory);
             }
             else
-                // Nothing found
-                Console.WriteLine("No memories were found.");
+                // if no memory is found on that date
+                Console.WriteLine("No memories were found for this date.");
         }
 
-        // Lets user to delete memories on day he enters
-
+        // Lets user delete memories on day he enters
         public void DeleteMemories()
         {
             Console.WriteLine("Entries with exact date and time will be deleted");
@@ -81,7 +80,7 @@ namespace MemoriesApp
         }
         public void ReverseSentence()
         {
-            Console.Clear();
+            // Console.Clear();
             Console.WriteLine("Reverse Sentence");
             char[] charArray = GetCaptureInput().ToCharArray();
             Array.Reverse(charArray);
@@ -90,10 +89,10 @@ namespace MemoriesApp
 
          public static void DisplayResult(string message)
         {
-            Console.WriteLine($"\r\nYour modified string is: {message}");
+            Console.WriteLine($"\r\nYour modified silly sentence is: {message}");
             string str = message;
-            Console.WriteLine("1) The length of '{0}' is {1}", str, str.Length);
-            Console.Write("\r\nPress Enter to return to MemoriesApp Main Menu");
+            Console.WriteLine("Also, your silly sentence '{0}' is {1} characters long!", str, str.Length);
+            Console.Write("\r\nPress Enter to return to the Memories App Main Menu");
             Console.ReadLine();
         }
 
@@ -117,9 +116,12 @@ namespace MemoriesApp
  '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' '----------------' 
 
  ";
-
+            // Set the Foreground color to Dark Yellow for title only 
+            Console.ForegroundColor = ConsoleColor.DarkYellow; 
             Console.WriteLine(titleArt);
             Console.WriteLine("** WELCOME TO THE MEMORIES APP **");
+            // Set the Foreground color back to White
+            Console.ForegroundColor = ConsoleColor.White; 
             Console.WriteLine();
             Console.WriteLine("Current Date & Time: {0}", DateTime.Now);
             Console.WriteLine();
