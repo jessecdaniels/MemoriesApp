@@ -22,7 +22,7 @@ namespace MemoriesApp
                 Console.WriteLine("1) - Add a memory");
                 Console.WriteLine("2) - Search for memories");
                 Console.WriteLine("3) - Delete memories");
-                Console.WriteLine("4) - Make some gibberish"); //something silly as requested by my 4 year old daughter, also counts number of characters in string and returns that information
+                Console.WriteLine("4) - Make some gibberish"); // something silly as requested by my 4 year old daughter, also counts number of characters in string and returns that information
                 Console.WriteLine("5) - End");
                 choice = Console.ReadKey().KeyChar;
                 Console.WriteLine();
