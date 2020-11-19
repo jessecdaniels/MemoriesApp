@@ -1,6 +1,6 @@
 # MemoriesApp
 
-MemoriesApp is a console application and my final project for Code Louisville's 2020 C# course.
+MemoriesApp is a console application and my final project for Code Louisville's 2020 C# course. 
 
 ## Why make the MemoriesApp
 
@@ -12,7 +12,7 @@ With that in mind I wanted to create the MemoriesApp as a simple journal tool to
 
 Once you run the MemoriesApp, you will be greeted by the title, current date & time, Today's Memories, ONE YEAR AGO, and the main menu options 1-5.
 
-    "Today's Memories" prints all memories entered for the current date to the console while "ONE YEAR AGO" prints all memories entered from exactly one year prior. 
+    "Today's Memories" will print all memories entered for the current date to the console while "ONE YEAR AGO" prints all the memories entered from exactly one year prior. 
 
 To use the Memories App simply enter a menu option 1, 2, 3, 4 or 5.
 
@@ -47,7 +47,7 @@ To use the Memories App simply enter a menu option 1, 2, 3, 4 or 5.
 
 ## Author
 
-* Jesse Daniels  
+* Jesse Daniels * Created with Visual Studio Code Version: 1.51.1
 
 ## Acknowledgments
 
