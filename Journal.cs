@@ -92,7 +92,7 @@ namespace MemoriesApp
             Console.WriteLine($"\r\nYour modified silly sentence is: {message}");
             string str = message;
             Console.WriteLine("Also, your silly sentence '{0}' is {1} characters long!", str, str.Length);
-            Console.Write("\r\nPress Enter to return to the Memories App Main Menu");
+            Console.Write("\r\nPress Enter to return to the MemoriesApp Main Menu");
             Console.ReadLine();
         }
 
@@ -119,7 +119,7 @@ namespace MemoriesApp
             // Set the Foreground color to Dark Yellow for title only 
             Console.ForegroundColor = ConsoleColor.DarkYellow; 
             Console.WriteLine(titleArt);
-            Console.WriteLine("** WELCOME TO THE MEMORIES APP **");
+            Console.WriteLine("** Welcome to the MemoriesApp **");
             // Set the Foreground color back to White
             Console.ForegroundColor = ConsoleColor.White; 
             Console.WriteLine();
