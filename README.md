@@ -10,7 +10,7 @@ With that in mind I wanted to create the MemoriesApp as a simple journal tool to
 
 ## Instructions
 
-Once you run the Memories App, you will be greeted by the title, current date & time, Today's Memories, ONE YEAR AGO, and the main menu options 1-5.
+Once you run the MemoriesApp, you will be greeted by the title, current date & time, Today's Memories, ONE YEAR AGO, and the main menu options 1-5.
 
     "Today's Memories" prints all memories entered for the current date to the console while "ONE YEAR AGO" prints all memories entered from exactly one year prior. 
 
