@@ -47,7 +47,7 @@ To use the Memories App simply enter a menu option 1, 2, 3, 4 or 5.
 
 ## Author
 
-* Jesse Daniels * Created with Visual Studio Code Version: 1.51.1
+* Jesse Daniels | Created with Visual Studio Code Version: 1.51.1
 
 ## Acknowledgments
 
